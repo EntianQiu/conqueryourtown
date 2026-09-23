@@ -3,6 +3,14 @@ Explore the real world and expand your kingdom - a GPS based game
 
 Development note: This project was developed using AI-assisted coding (often referred to as "vibe coding"). I designed the features and iterated on the application, using AI tools to help generate and modify the code.
 
+## Setup
+
+The Street basemap requires a CARTO API key.
+
+1. Obtain a CARTO basemap key.
+2. Replace `YOUR_CARTO_API_KEY` in the code with your key.
+3. Restrict the key to your deployment domain where possible.
+
 ## Version History
 
 ### V1: Original App
@@ -24,5 +32,5 @@ Development note: This project was developed using AI-assisted coding (often ref
 ### V3: Fog Thickness Control, CARTO API Key
 
 * **Fog opacity:** Added a 0–100% opacity slider in 5% increments. The setting is saved between visits and defaults to fully opaque. The slider is disabled when Fog is turned off.
-* **CARTO API key:** Added a CARTO API key to the raster tile URLs used by the Street map after CARTO introduced key requirements. The key is necessarily public in the page source, so it should be restricted to the project's domain in CARTO's key settings.
+* **CARTO API key:** Added a CARTO API key to the raster tile URLs used by the Street map after CARTO introduced key requirements. The key is supplied client-side for the deployed application and should be restricted to the project's domain.
 
